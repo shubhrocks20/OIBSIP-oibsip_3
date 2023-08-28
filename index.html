@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Converter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <section>
-        <div  class="main-wrapper">
-            <h1>Temperature Converter</h1>
+        <div class="main-wrapper">
+            <h1>Temperature Converter🌡️</h1>
             <div class="input-wrapper">
-                <input type="text" id="celsius" placeholder="celsius" value="">
-                <input type="text" id="fahrenheight" placeholder="fahrenheight" value="">
+                <span class="inline-block">Enter celcius value : </span><input type="number" id="celsius" placeholder="celsius" value="">
+                <span>Enter fahrenheight value : </span><input type="number" id="fahrenheight" placeholder="fahrenheight" value="">
+                <span>Enter kelvin value : </span><input type="number" id="kelvin" placeholder="kelvin" value="">
             </div>
             <div class="button-wrapper">
                 <button class="btn btn-primary " id="convert">Convert</button>
                 <button class="btn btn-primary" id="reset">Reset</button>
             </div>
-
+            <p class="text-red-600 text-2xl" id="err"></p>
         </div>
     </section>
 <script src="js/app.js"></script>  
